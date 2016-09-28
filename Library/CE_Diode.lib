@@ -1,0 +1,52 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# LED
+#
+DEF LED D 0 40 Y N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$ENDFPLIST
+DRAW
+P 2 0 1 0  -50 50  -50 -50 N
+P 3 0 1 0  -80 -25  -125 -65  -120 -40 N
+P 3 0 1 0  -65 -40  -110 -80  -105 -55 N
+P 3 0 1 0  50 50  -50 0  50 -50 F
+X K 1 -200 0 150 R 40 40 1 1 P
+X A 2 200 0 150 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# D_Schottky
+#
+DEF D_Schottky D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "D_Schottky" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ D-Pak_TO252AA
+ Diode_*
+ *SingleDiode
+ *SingleDiode*
+ *_Diode_*
+$ENDFPLIST
+DRAW
+P 3 0 1 0  50 50  -50 0  50 -50 F
+P 6 0 1 8  -75 25  -75 50  -50 50  -50 -50  -25 -50  -25 -25 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
